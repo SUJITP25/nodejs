@@ -24,7 +24,6 @@
 
 
 
-
 // Synchronous Code Execution
 // Call Stack- global()
 // console.log("first")
@@ -32,8 +31,6 @@
 // console.log("third")
 // First, second and third will be print on console.
 // After execution done then global() function will also be removed from stack. 
-
-
 
 
 
@@ -47,7 +44,7 @@
 
 
 
-
+// EventLoop and Therad pool comes under the libuv concept.
 
 
 // Event Loop Phases 
@@ -57,4 +54,14 @@
 // Poll, 
 // check, 
 // close callback
+
+
+
+// EventLoop has 2 faces 
+// nextTick Queue - proces.nextTickscallbacks. 
+// promise queue = promise callbacks.
+
+
+
+
 
