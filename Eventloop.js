@@ -33,5 +33,7 @@
 
 // If Multiple callbacks are ready to execute in the call stack, Node js prioritizes 
 // Which callback to execute first?
-// EventLoop will answer this question.
+// Event Loop will answer this question.
+// All Callbacks are registered in the event loops.
+// 
 
