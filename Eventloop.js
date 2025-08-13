@@ -35,5 +35,8 @@
 // Which callback to execute first?
 // Event Loop will answer this question.
 // All Callbacks are registered in the event loops.
-// 
+// callback functions will be assigned to the thread pool. 
+// then callback will be assigned to the eventloop
+// event loop will execute the fucntion in call stack.
+
 
