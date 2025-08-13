@@ -1,7 +1,6 @@
 // Javascript is synchronous, blocking and single-theraded language.
 // To make aync programming possible, we need the help of libuv.
 
-
 // Asyncronous Code Execution
 // memory heap - All declared variables and functions resides here. 
 // callstack - Whenever we execure code, functions are pushed into the call stack.
@@ -20,6 +19,8 @@
 // back again in the call stack.
 
 
+
+
 // Synchronous Code Execution
 // Call Stack- global()
 // console.log("first")
@@ -27,6 +28,10 @@
 // console.log("third")
 // First, second and third will be print on console.
 // After execution done then global() function will also be removed from stack. 
-//  
 
+
+
+// If Multiple callbacks are ready to execute in the call stack, Node js prioritizes 
+// Which callback to execute first?
+// EventLoop will answer this question.
 
