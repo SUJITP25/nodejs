@@ -16,7 +16,8 @@
 // })
 // console.log("third")
 // first,third and then second will be executed.
-
+// Async function will be executed in the libuv and after the execution it will be 
+// back again in the call stack.
 
 
 // Synchronous Code Execution
@@ -26,6 +27,6 @@
 // console.log("third")
 // First, second and third will be print on console.
 // After execution done then global() function will also be removed from stack. 
-// 
+//  
 
 
