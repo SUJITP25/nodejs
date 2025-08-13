@@ -1,11 +1,15 @@
 // Javascript is synchronous, blocking and single-theraded language.
 // To make aync programming possible, we need the help of libuv.
 
+
+
 // Asyncronous Code Execution
 // memory heap - All declared variables and functions resides here. 
 // callstack - Whenever we execure code, functions are pushed into the call stack.
 // Execution is done in LIFO manner, lastInFirstOut, stack Data Structure. 
 // fs.readFile() - async function handle by libuv by native async mechaism, Thread pool.
+
+
 
 
 // import fs from "fs"
@@ -31,12 +35,26 @@
 
 
 
+
+
 // If Multiple callbacks are ready to execute in the call stack, Node js prioritizes 
 // Which callback to execute first?
 // Event Loop will answer this question.
 // All Callbacks are registered in the event loops.
-// callback functions will be assigned to the thread pool. 
-// then callback will be assigned to the eventloop
-// event loop will execute the fucntion in call stack.
+// Callback functions will be assigned to the thread pool. 
+// Then callback will be assigned to the eventloop
+// Event loop will execute the fucntion in call stack.
 
+
+
+
+
+
+// Event Loop Phases 
+// Timers 
+// Pending Callbacks 
+// Idle, Prepare 
+// Poll, 
+// check, 
+// close callback
 
