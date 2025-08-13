@@ -2,13 +2,11 @@
 // To make aync programming possible, we need the help of libuv.
 
 
-
 // Asyncronous Code Execution
 // memory heap - All declared variables and functions resides here. 
 // callstack - Whenever we execure code, functions are pushed into the call stack.
 // Execution is done in LIFO manner, lastInFirstOut, stack Data Structure. 
 // fs.readFile() - async function handle by libuv by native async mechaism, Thread pool.
-
 
 
 
@@ -57,10 +55,16 @@
 
 
 
-// EventLoop has 2 faces 
+// EventLoop has 2 faces. 
 // nextTick Queue - proces.nextTickscallbacks. 
 // promise queue = promise callbacks.
-
+// Microtask priority is high and then eventloop will run
+// All callbacks within the timer queque are executed.
+// Any callbacks in the micro task queues are excuted. First, nextTick queque and 
+// than promise queque. 
+// all callbacks in the checkqueques are cexecuted 
+// again check in the microtaskquque. 
+// All callbacks in the close queque are executed.
 
 
 
